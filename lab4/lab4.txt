@@ -1,0 +1,13 @@
+1. a) 1) Deciding on what users need
+      2) Choosing a data model for user requirements
+      3) Implementing Logical (relation schemas and attributes) and Physical
+(layout) designs for DB
+   b) Entity relationship data model - collection of entities and relationships
+between them
+2. a) Student = (name (composite), birth_year (derived from age), phone_num (multiv
+alued, many numbers), ID (simple, primary), age (simple))
+   b) University = (title, location, rank, housing)
+      Course = (title, credits, dept, course_id)
+      Dormitory = (location, capacity, availability)
+      Teacher = (name, dept, teacher_id)
+      Office of the Registrar = (worker_name, shift_start, shift_end)
