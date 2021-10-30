@@ -1,0 +1,17 @@
+1. BCNF method is not always reliable for dependency preserving. For example:
+R = (A, B, C); AB -> C, C -> B; C is not prime attribute
+
+Decomposition: R1 = (C, A); R2 = (C, B); but AB -> C is lost
+
+BCNF is convenient for ensuring data integrity and less redundancy
+
+6. 1) Avoid data redundancy - some data may be unnecessarily stored because it
+is repeated. In order to save resources, that should be taken into account.
+   2) Data integrity - data should be synchronized across all tables since
+we don't want contradictions in tables.
+   3) Dependency preserving decompositions - preservation of all dependencies
+is important since we need to remember what identifies what
+
+   Decomposition which provides lossless join - natural join with no data loss
+                                lossy join - we lost some data when dividing
+tables
