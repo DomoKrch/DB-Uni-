@@ -1,0 +1,8 @@
+1. Large Object data types are stored independently of the column, thus this
+increases performance. Query returns a pointer to it.
+
+2. Privilege - what kind of queries are allowed and where
+   Role - groups privileges
+   Users - can be assigned to roles
+
+  
